@@ -5,6 +5,7 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 There are 6 activities and 30 subjects in total.  The dataset has 180 rows (6x30) and 75 columns.  The first column is Activity, the second is Subject id, and the following 73 columns are the measurements or variables.  The column variables are described as follows:
 
 1. Activity
+
    Values are:
    * WALKING
    * WALKING_UPSTAIRS
@@ -14,6 +15,7 @@ There are 6 activities and 30 subjects in total.  The dataset has 180 rows (6x30
    * LAYING
 
 2. Subject
+
   This field contains the ID of the subject who took part in the experiments.  Values range from 1 to 30 for a total of 30 sujects.
 
 
