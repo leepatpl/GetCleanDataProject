@@ -1,11 +1,12 @@
-This codebook documents the variables in the file "AvgGrp.txt".  The data consists of the group averages of the measurements taken on the mean and standard deviation for each measurement, where the variables have been grouped by activity and subject. The original measurements are taken from data collected from the accelerometers from the Samsung Galaxy S smartphone.  A full description of the original dataset is available at this link:
+This codebook documents the variables in the dataset produced for the project assignment for the "Getting and Cleaning Data" course.  The dataset consists of the group averages of the measurements taken on the mean and standard deviation for each measurement, where the measurements have been grouped by activity and subject. The original measurements are collected from accelerometers used in an experiment on the Samsung Galaxy S smartphone.  A full description of the experiment and original dataset is available at this website:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-There are 6 activities and 30 subjects in total.  The dataset has 180 rows (6x30) and 75 columns.  The first column is Activity, the second is Subject id, and the following 73 columns are the measurements or variables.  The column variables are described as follows:
+There are 6 activities and 30 subjects. A group consists of an activity and a subject, giving 180 groups.  Each row in the dataset represents the average measurements for a group.  The dataset has 180 rows and 75 columns.  Each row contains the group averages of the 73 features selected from the 561 features from the Samsung dataset.The first column is Activity, the second is Subject, and the following 73 columns are the measurements for the features.  The columns are described as follows:
 
 1. Activity
 
+   This column contains the activity labels.
    Values are:
    * WALKING
    * WALKING_UPSTAIRS
@@ -16,10 +17,10 @@ There are 6 activities and 30 subjects in total.  The dataset has 180 rows (6x30
 
 2. Subject
 
-  This field contains the ID of the subject who took part in the experiments.  Values range from 1 to 30 for a total of 30 sujects.
+  This field contains the ID of the subject who took part in the experiment.  Values range from 1 to 30 for a total of 30 subjects.
 
 
-The following list consists of the names of the group averages for the selected 73 features from the original Samsung dataset.  For a full explanation on each feature, please refer to the "features.txt" and "features_info.txt" documentation files for the original dataset. For example, the explanation of the feature "Avg.tBodyAcc.mean.X" can be found in the original documentation for the corresponding feature "tBodyAcc.mean.X".
+The following list consists of the names of the group averages for the selected 73 features from the original Samsung dataset.  The averages are bounded within [-1,1].  For a full explanation on each feature, please refer to the "features.txt" and "features_info.txt" documentation files for the Samsung dataset. For example, the explanation of the feature "Avg.tBodyAcc.mean.X" can be found in the original documentation for the corresponding feature "tBodyAcc.mean.X".
  
    * Avg.tBodyAcc.mean.X 
    * Avg.tBodyAcc.mean.Y 
